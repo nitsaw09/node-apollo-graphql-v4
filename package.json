@@ -1,0 +1,28 @@
+{
+  "name": "node-apollo-graphql-v4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "start": "yarn compile && node ./dist/index.js",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev --name init"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.7.0",
+    "@prisma/client": "^4.12.0",
+    "class-validator": "^0.14.0",
+    "graphql": "16.6.0",
+    "prisma": "^4.12.0",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^2.0.0-beta.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "typescript": "^5.0.4"
+  }
+}
